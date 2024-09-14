@@ -21,6 +21,8 @@ class Data_collector(Node):
         msg = f'\nTemperature: \t{self.temperature}\nHumidity: \t{self.humidity}\nPressure: \t{self.pressure}\n'
         self.get_logger().info(msg)
 
+
+
 def main(args = None):
     rclpy.init(args = args)
     weather_data_collector = Data_collector()
